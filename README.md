@@ -10,11 +10,11 @@ In this project I have tried to clone the home page of jiocinema. I have tried t
 
 ### flex
 
-to give a element display property to flex we can use "flex" as class name
+it will apply `display : flex` to the element whereever class is given as "flex"
 
 ### jc-center
 
-it will apply justify-content : center to the element whereever class is given as "jc-center"
+it will apply `justify-content : center` to the element whereever class is given as "jc-center"
 
 ### jc-left
 
