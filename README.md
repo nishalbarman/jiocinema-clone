@@ -6,6 +6,9 @@ In this project I have tried to clone the home page of jiocinema. I have tried t
 
 ...
 
+### Folder structure
+<img src="https://keen-tapioca-97528c.netlify.app/images/folder-structure-image.png"/>
+
 ## Documentation for css styles
 
 ### flex
