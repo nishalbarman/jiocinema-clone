@@ -6,7 +6,7 @@ In this project I have tried to clone the home page of jiocinema. I have tried t
 
 ## https://keen-tapioca-97528c.netlify.app
 
-### Folder structure
+## Folder structure
 
 <img src="https://keen-tapioca-97528c.netlify.app/images/folder-structure-image.png"/>
 
