@@ -1,0 +1,31 @@
+flex {
+  display: flex;
+}
+
+jc-center {
+  justify-content: center;
+}
+
+jc-left {
+  justify-content: flex-start;
+}
+
+jc-right {
+  justify-content: flex-end;
+}
+
+jc-sp-b {
+  justify-content: space-between;
+}
+
+jc-sp-a {
+  justify-content: space-around;
+}
+
+jc-sp-e {
+  justify-content: space-evenly;
+}
+
+/* navbar styles */
+
+/* navbar ends  */
