@@ -35,3 +35,15 @@ it will apply `justify-content : space-around` to the element whereever class is
 ### jc-sp-e
 
 it will apply `justify-content : space-evently` to the element whereever class is given as "jc-sp-e"
+
+### al-center
+
+it will apply `align-items : center` to the element whereever class is given as "al-center"
+
+### al-start
+
+it will apply `align-items : flex-start` to the element whereever class is given as "al-start"
+
+### al-end
+
+it will apply `align-items : flex-end` to the element whereever class is given as "al-end"
