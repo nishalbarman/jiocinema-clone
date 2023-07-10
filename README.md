@@ -4,7 +4,7 @@ In this project I have tried to clone the home page of jiocinema. I have tried t
 
 # Deployed link
 
-...
+https://keen-tapioca-97528c.netlify.app
 
 ### Folder structure
 
