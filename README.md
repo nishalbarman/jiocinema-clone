@@ -2,9 +2,9 @@
 
 In this project I have tried to clone the home page of jiocinema. I have tried to clone the navigation bar, sliding images, card and footer part of the home page.
 
-# Deployed link
+## Deployed link
 
-https://keen-tapioca-97528c.netlify.app
+## https://keen-tapioca-97528c.netlify.app
 
 ### Folder structure
 
