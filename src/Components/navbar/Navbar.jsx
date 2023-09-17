@@ -1,26 +1,26 @@
 import React from "react";
-import "Navbar.css";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       {/* navbar starts here */}
       <div className="navbar flex jc-sp-b al-center">
-        {/* flex, justify-content:space-between */}
         <div className="navbar-left flex jc-left al-center">
           <img
             src="https://www.jiocinema.com/images/jc_logo.svg"
             alt="navbar-logo"
             className="navbar-logo"
           />
-          <a href="./index.html">JioCinema</a>
+          <Link to="./index.html">JioCinema</Link>
           <button id="subscribe" className="subscribe-btn">
             Subscribe
           </button>
-          <a href="#">For You</a>
-          <a href="#">Sports</a>
-          <a href="#">Free</a>
-          <a href="#">Premium</a>
+          <Link to="/">For You</Link>
+          <Link to="/">Sports</Link>
+          <Link to="/">Free</Link>
+          <Link to="/">Premium</Link>
         </div>
         <div className="navbar-right flex jc-right al-center">
           {/* second part */}
