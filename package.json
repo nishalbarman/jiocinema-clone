@@ -1,5 +1,6 @@
 {
   "name": "jiocinema-clone",
+  "homepage": "https://nishalbarman.github.io/jiocinema-clone/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
