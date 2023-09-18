@@ -4,7 +4,7 @@ In this project I have tried to clone the home page of jiocinema. I have tried t
 
 ## Deployed link
 
-## This is the home page clone for jiocinema website...
+## [Visit Site](https://nishalbarman.github.io/jiocinema-clone/)
 
 ## Folder structure
 
