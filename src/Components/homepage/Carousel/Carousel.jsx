@@ -1,29 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Carousel.module.css";
 
-function Carousel({ images }) {
-  const [currentIndex, setCurrentIndex] = useState(1);
+function Carousel({ data }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState("left");
+  const [intervalId, setIntervalId] = useState(null);
+  const [triggerCarousel, setTriggerCarousel] = useState(1);
+
+  useEffect(() => {
+    let id = setInterval(() => {
+      setCurrentIndex((prev) => {
+        if (prev === data.length - 1) return 0;
+        return prev + 1;
+      });
+    }, 5000);
+    setIntervalId(id);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, [triggerCarousel]);
 
   const handleNext = () => {
+    clearInterval(intervalId);
+    setTriggerCarousel((prev) => prev + 1);
     setDirection("right");
     setCurrentIndex((prev) => {
-      if (prev + 1 > images.length - 1) return 0;
+      if (prev + 1 > data.length - 1) return 0;
       return prev + 1;
     });
   };
 
   const handlePrevious = () => {
+    clearInterval(intervalId);
+    setTriggerCarousel((prev) => prev + 1);
     setDirection("left");
     setCurrentIndex((prev) => {
-      if (prev - 1 < 0) return images.length - 1;
+      if (prev - 1 < 0) return data.length - 1;
       return prev - 1;
     });
   };
 
   const handleDotClick = (index) => {
+    clearInterval(intervalId);
+    setTriggerCarousel((prev) => prev + 1);
     setDirection(index > currentIndex ? "right" : "left");
     setCurrentIndex(index);
   };
@@ -31,19 +53,22 @@ function Carousel({ images }) {
   const slideVariants = {
     hiddenRight: {
       x: "100%",
+      opacity: 0,
     },
 
     hiddenLeft: {
       x: "-100%",
+      opacity: 0,
     },
     visible: {
       x: "0",
+      opacity: 1,
       transition: {
         duration: 0.5,
       },
     },
   };
-
+  console.log(data[currentIndex].image);
   return (
     <div className={styles.carousel}>
       <AnimatePresence>
@@ -54,9 +79,12 @@ function Carousel({ images }) {
           initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
           animate={"visible"}
           exit={"exit"}>
-          <div>
-            <p>Khatron ke khiladi</p>
-            <p>HIndi - Reality - U/A 13 +</p>
+          <div className={styles.details}>
+            <p>{data[currentIndex].title}</p>
+            <p>
+              {data[currentIndex].language} - {data[currentIndex].movieType} -{" "}
+              {data[currentIndex].contentRating}
+            </p>
             <button>
               <svg
                 width="18"
@@ -71,14 +99,14 @@ function Carousel({ images }) {
               Watch
             </button>
           </div>
-          <div style={{ backgroundImage: `url(${images[currentIndex]})` }}>
+          <div style={{ backgroundImage: `url(${data[currentIndex].image})` }}>
             {/* <img src={images[currentIndex]} /> */}
           </div>
         </motion.div>
       </AnimatePresence>
       <div className={styles.pagination}>
         <div className={styles.dotwrapper}>
-          {images.map((_, index) => {
+          {data.map((_, index) => {
             return (
               <div
                 className={`${styles.dot} ${

@@ -1,0 +1,16 @@
+.poster {
+  width: 600px;
+  aspect-ratio: 16/9;
+  border-radius: 14px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 4px 10px;
+}
+
+.poster > p {
+  align-self: flex-end;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}

@@ -2,6 +2,12 @@
   align-self: flex-end;
 }
 
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+}
+
 .carousel_card {
   display: flex;
   justify-content: space-between;
@@ -9,10 +15,12 @@
   color: white;
   margin-top: 20px;
   padding: 5px 0px;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .carousel > div.carousel_card > div:nth-child(2) {
-  height: 750px;
+  height: 720px;
   aspect-ratio: 16/9;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,6 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: fit-content;
 }
 
 .carousel_card > div > button {
@@ -31,7 +40,7 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
-  width: 36%;
+  width: 120px;
   padding: 12px 0px;
   background-color: rgb(217, 0, 141);
   color: white;
@@ -68,6 +77,7 @@
   border-radius: 50%;
   background-color: rgb(86, 87, 88);
   transition-duration: 250ms;
+  cursor: pointer;
 }
 
 .dotactive {
@@ -80,9 +90,11 @@
 .pagination {
   display: flex;
   justify-content: center;
-  height: 10px;
+  height: fit-content;
   width: 100%;
   margin-top: 10px;
+  align-items: center;
+  padding: 0px 80px;
 }
 
 .pagination > div:nth-child(1).dotwrapper {
@@ -93,14 +105,13 @@
   height: 50px;
   width: 100%;
 }
-.pagination {
-  padding: 0px 20px;
-}
 
 .pagination > div:nth-child(2) {
   display: flex;
   justify-self: flex-end;
   gap: 15px;
+  align-items: center;
+  height: inherit;
 }
 
 .left,

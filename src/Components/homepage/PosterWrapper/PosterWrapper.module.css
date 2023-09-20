@@ -1,0 +1,19 @@
+.poster_wrapper {
+  display: flex;
+  height: fit-content;
+  gap: 10px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.poster_outer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poster_outer > div:first-child > p {
+  font-family: "JioVar";
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
