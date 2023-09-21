@@ -5,12 +5,41 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  padding: 4px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.poster > div {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 80px;
+  background-color: black;
+  filter: blur(50px);
+  width: 100%;
+  border: 1px solid white;
 }
 
 .poster > p {
+  z-index: 1;
+  left: 13px;
+  bottom: 12px;
+  position: absolute;
   align-self: flex-end;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
 }
+/* 
+@media only screen and (max-width: 1000px) {
+  .poster {
+    width: 600px;
+    aspect-ratio: 16/9;
+    border-radius: 14px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+} */

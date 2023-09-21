@@ -83,3 +83,22 @@
 }
 
 /* navbar ends  */
+
+@media screen and (max-width: 969px) {
+  .input-div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  /* search bar  */
+  .input-div {
+    display: none;
+  }
+
+  /* links and profile icon */
+  .navbar-right,
+  .navbar-left a {
+    display: none;
+  }
+}

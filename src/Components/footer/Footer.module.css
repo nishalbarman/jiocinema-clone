@@ -1,0 +1,142 @@
+.footer {
+  color: white;
+  padding-top: 26px;
+  margin-top: 50px;
+  background-color: rgb(23, 24, 26);
+}
+
+.firstpart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.firstpart > div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: fit-content;
+}
+
+.heading {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 21.5px;
+}
+
+.firstpart > div.left > div > p:not(.heading) {
+  margin: 16px 0px;
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.firstpart > div.left {
+  gap: 60px;
+}
+
+.rightheading {
+  font-size: 25.5px;
+  font-weight: 800;
+}
+
+.secondpart {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(32, 33, 35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  font-size: 12.3px;
+  align-items: center;
+  /* flex-wrap: wrap-reverse; */
+  gap: 30px;
+}
+
+.secondpart > img {
+  height: 48px;
+}
+
+.socialicons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.socialicons > div {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgb(51, 52, 54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialicons:nth-child(2) {
+  justify-content: flex-start;
+}
+
+.stores {
+  height: 30px;
+}
+
+@media screen and (max-width: 884px) {
+  .footer > .firstpart {
+    padding-top: 20px;
+  }
+  .footer > .firstpart > div.right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .footer > .firstpart > div.right > div:nth-child(1) {
+    justify-self: flex-start;
+    flex-grow: 1;
+  }
+
+  .footer > .firstpart > div.right > div:nth-child(2) {
+    justify-self: flex-start;
+    flex-grow: 1;
+  }
+
+  .footer > .firstpart > div.right > div > div.socialicons > div {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer > .firstpart > div.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .footer > .firstpart > div.right > div:nth-child(1) {
+    justify-self: flex-start;
+    flex-grow: 1;
+  }
+
+  .footer > .firstpart > div.right > div:nth-child(2) {
+    justify-self: flex-start;
+    flex-grow: 1;
+    padding-top: 20px;
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+  }
+
+  .footer > .firstpart > div.right > div > div.socialicons > div {
+    width: 42px;
+    height: 42px;
+  }
+}

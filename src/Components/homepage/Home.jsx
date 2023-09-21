@@ -1,10 +1,10 @@
 import React from "react";
-import Carousel from "./Carousel/Carousel";
 import Banner from "./Banner/Banner";
 import styles from "./Home.module.css";
 import HPoster from "./HPoster/HPoster";
 import PostersWrapper from "../../Wrapper/PosterWrapper/PostersWrapper";
 import VPoster from "./VPoster/VPoster";
+import Carousel from "../../Components/Carousel/Carousel";
 
 function Home() {
   const data = [
@@ -28,16 +28,16 @@ function Home() {
       isLive: true,
       isPremium: false,
     },
-    {
-      title: "Kaisi Yeh Yaariaan",
-      language: "Hindi",
-      movieType: "Romance",
-      contentRating: "U/A 13+",
-      image:
-        "https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/16x9.-1694849424518.jpg",
-      isLive: false,
-      isPremium: false,
-    },
+    // {
+    //   title: "Kaisi Yeh Yaariaan",
+    //   language: "Hindi",
+    //   movieType: "Romance",
+    //   contentRating: "U/A 13+",
+    //   image:
+    //     "https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/16x9.-1694849424518.jpg",
+    //   isLive: false,
+    //   isPremium: false,
+    // },
   ];
 
   const sportsData = [
@@ -80,11 +80,11 @@ function Home() {
   return (
     <div className={styles.homepage_wrapper}>
       <Carousel data={data} />
-      <Banner
+      {/* <Banner
         img={
           "https://v3img.voot.com/resizeMedium,w_1920,h_411/v3Storage/assets/14x3-1694849539803.jpg?imformat=chrome"
         }
-      />
+      /> */}
       <PostersWrapper title="Top Sports">
         {sportsData.map((element) => {
           return <HPoster {...element} />;
@@ -120,7 +120,7 @@ function Home() {
       {/* // */}
       <PostersWrapper title="Top Sports">
         {sportsData.map((element) => {
-          return <HPoster {...element} />;
+          return <HPoster image={element.image} />;
         })}
       </PostersWrapper>
       <PostersWrapper title="Fresh Episodes 📺" data={sportsData}>
@@ -131,7 +131,7 @@ function Home() {
       {/* // */}
       <PostersWrapper title="Top Sports">
         {sportsData.map((element) => {
-          return <HPoster {...element} />;
+          return <HPoster image={element.image} />;
         })}
       </PostersWrapper>
       <PostersWrapper title="Fresh Episodes 📺" data={sportsData}>

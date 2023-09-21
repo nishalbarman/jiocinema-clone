@@ -6,6 +6,7 @@ function HPoster({ title, image }) {
   return (
     <div style={{ backgroundImage: `url(${image})` }} className={styles.poster}>
       {title && <p>{title}</p>}
+      {title && <div></div>}
     </div>
   );
 }
