@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/jiocinema-clone/static/css/main.3af222ba.css",
-    "main.js": "/jiocinema-clone/static/js/main.cc7c6660.js",
+    "main.css": "/jiocinema-clone/static/css/main.e299b3f0.css",
+    "main.js": "/jiocinema-clone/static/js/main.9186bd62.js",
     "static/js/787.2843e959.chunk.js": "/jiocinema-clone/static/js/787.2843e959.chunk.js",
     "static/media/JioTypeVarW05-Regular.woff": "/jiocinema-clone/static/media/JioTypeVarW05-Regular.972d7b530b9e00a6eb30.woff",
+    "static/media/revicons.eot": "/jiocinema-clone/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/jiocinema-clone/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/jiocinema-clone/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/jiocinema-clone/index.html",
-    "main.3af222ba.css.map": "/jiocinema-clone/static/css/main.3af222ba.css.map",
-    "main.cc7c6660.js.map": "/jiocinema-clone/static/js/main.cc7c6660.js.map",
+    "main.e299b3f0.css.map": "/jiocinema-clone/static/css/main.e299b3f0.css.map",
+    "main.9186bd62.js.map": "/jiocinema-clone/static/js/main.9186bd62.js.map",
     "787.2843e959.chunk.js.map": "/jiocinema-clone/static/js/787.2843e959.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3af222ba.css",
-    "static/js/main.cc7c6660.js"
+    "static/css/main.e299b3f0.css",
+    "static/js/main.9186bd62.js"
   ]
 }
